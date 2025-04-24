@@ -18,7 +18,7 @@ function CounterApp(){
     <div>
         <h1>Counter App</h1>
         <p>
-            Counter: {count}
+            Count: {count}
         </p>
         <button onClick={handleIncrement}>Increment</button>
         <button onClick={handleDecrement}>Decrement</button>
