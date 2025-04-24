@@ -4,6 +4,14 @@ import React, { useState } from "react";
 function CounterApp(){
 
     const [count,setCount]=useState(0);
+    
+
+    const handleIncrement=()=>{
+        setCount(count+1);
+    };
+    const handleDecrement=()=>{
+        setCount(count-1);
+    };
 
     return(
     
@@ -12,8 +20,8 @@ function CounterApp(){
         <p>
             Counter: {count}
         </p>
-        <button onClick={()=>{setCount(count+1)}}>Increment</button>
-        <button onClick={()=>{setCount(count-1)}}>Decrement</button>
+        <button onClick={handleIncrement}>Increment</button>
+        <button onClick={handleDecrement}>Decrement</button>
 
 
     </div>
